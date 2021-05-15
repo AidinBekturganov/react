@@ -8,6 +8,9 @@ import Header from './components/header';
 import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
+import Single from './components/single';
+import Search from './components/search';
+
 
 const routing = (
 	<Router>
@@ -18,6 +21,10 @@ const routing = (
 				<Route path="/register" component={Register} />
 				<Route path="/login" component={Login} />
 				<Route path="/logout" component={Logout} />
+				<Route path="/post/:slug" component={Single} />
+				<Route path="/search" component={Search} />
+
+
 			</Switch>
 		</React.StrictMode>
 	</Router>
