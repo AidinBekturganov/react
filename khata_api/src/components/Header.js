@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-function Header() {
+const Header = (props) => {
 	const classes = useStyles();
 	let history = useHistory();
 	const [data, setData] = useState({ search: '' });
