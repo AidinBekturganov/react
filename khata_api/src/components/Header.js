@@ -59,7 +59,16 @@ const Header = (props) => {
 							Khatafo
 						</Link>
 					</Typography>
-
+					<Button
+						href="#"
+						color="primary"
+						variant="outlined"
+						className={classes.link}
+						component={NavLink}
+						to="/admin"
+					>
+						ADMIN
+					</Button>
 					<SearchBar
 						value={data.search}
 						onChange={(newValue) => setData({ search: newValue })}
